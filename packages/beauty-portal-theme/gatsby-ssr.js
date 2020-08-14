@@ -3,6 +3,17 @@ const React = require('react');
 const headComponents = [];
 
 headComponents.push(
+  <script
+    type="text/javascript"
+    src="https://cdn.cookielaw.org/consent/03f1bb81-d4bd-4360-8ab5-6bfb7a9f3ed8-test/OtAutoBlock.js"
+  ></script>,
+  <script
+    src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+    type="text/javascript"
+    charset="UTF-8"
+    data-domain-script="03f1bb81-d4bd-4360-8ab5-6bfb7a9f3ed8-test"
+  ></script>,
+  <script type="text/javascript"> function OptanonWrapper() {} </script>,
   <link rel="preconnect" href="https://cdn.sanity.io" />,
   <link rel="dns-prefetch" href="https://cdn.sanity.io" />,
   <link
@@ -67,7 +78,8 @@ headComponents.push(
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-  />
+  />,
+  <script src="//assets.adobedtm.com/e6bd1902389a/0d39a18335b9/launch-bbf929470ebb-development.min.js" async></script>
 );
 
 exports.onRenderBody = ({ setHeadComponents }) => {
